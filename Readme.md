@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Denis Toropov](https://up.htmlacademy.ru/adaptive/17/user/952231).
-* Наставник: []Евгений Котов] (https://htmlacademy.ru/profile/id25083)
+* Наставник: [Евгений Котов] (https://htmlacademy.ru/profile/id25083)
 
 ---
 
