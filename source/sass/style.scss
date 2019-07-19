@@ -1,3 +1,7 @@
-body {
-  background: none;
-}
+@import "body.scss";
+@import"visually-hidden";
+@import "header.scss";
+@import "main-nav.scss";
+@import "advantages";
+@import "hotel-search";
+@import "footer"
