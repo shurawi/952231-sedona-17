@@ -1,19 +1,19 @@
 /*index.html*/
 @import "body.scss";
-@import"visually-hidden";
+@import"visually-hidden.scss";
 @import "header.scss";
 @import "main-nav.scss";
-@import "advantages";
-@import "hotel-search";
-@import "footer";
+@import "advantages.scss";
+@import "hotel-search.scss";
+@import "footer.scss";
 
 /*photo.html*/
-@import "photo-video";
+@import "photo-video.scss";
 
 /*reviews.html*/
-@import "reviews";
-@import "form";
+@import "reviews.scss";
+@import "form.scss";
 
 
 /**/
-@import "other";
+@import "other.scss";
