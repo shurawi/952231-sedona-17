@@ -1,6 +1,10 @@
+@import "variables.scss";
+
 .footer__title {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -24,4 +28,21 @@
 
 .copyright__link {
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff
+  }
 }
