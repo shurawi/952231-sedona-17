@@ -57,14 +57,12 @@
   }
 
   .photo__list {
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 60px;
     padding-right: 60px;
   }
 
-  .photo__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .photo__item:first-child {
     flex-basis: 100%;
   }

@@ -53,11 +53,11 @@
   .advantages__wrapper {
     display: flex;
     flex-direction: row;
-    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__text {
     line-height: 26px;
-    }
+  }
 }

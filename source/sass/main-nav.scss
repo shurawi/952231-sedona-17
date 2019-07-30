@@ -6,6 +6,8 @@
 }
 
 .main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: #81b3d2;
   text-transform: uppercase;
   text-align: center;
@@ -17,11 +19,6 @@
   font-weight: bold;
   text-decoration: none;
   color: #ffffff;
-}
-
-.main-nav__wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .main-nav__wrapper--left {
