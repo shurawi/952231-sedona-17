@@ -1,7 +1,8 @@
 /*index.html*/
-@import "body.scss";
-@import"visually-hidden.scss";
+@import "scaffolding.scss";
+@import "visually-hidden.scss";
 @import "header.scss";
+@import "main.scss";
 @import "main-nav.scss";
 @import "advantages.scss";
 @import "hotel-search.scss";
@@ -9,11 +10,14 @@
 
 /*photo.html*/
 @import "photo-video.scss";
+@import "photo.scss";
+@import "video.scss";
 
 /*reviews.html*/
 @import "reviews.scss";
 @import "form.scss";
 
 
-/**/
+/*other*/
 @import "other.scss";
+@import "variables.scss";

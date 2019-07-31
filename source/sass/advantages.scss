@@ -1,3 +1,10 @@
+@import "variables.scss";
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages__text {
   font-size: 18px;
   line-height: 26px;
@@ -30,4 +37,27 @@
 .advantages__item--bridge {
   background-color: #81b3d2;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .advantages__title {
+    font-size: 21px;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__text {
+    line-height: 26px;
+  }
 }

@@ -1,13 +1,11 @@
 @import "variables.scss";
 
-.header {
-  min-height: 56px;
-}
-
 @media (min-width: $desktop-width) {
-  .header {
+  .main {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
+    background-color: #ffffff;
   }
 }
