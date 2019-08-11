@@ -1,48 +1,39 @@
 @import "variables.scss";
 
-.footer__title {
-  margin: 0;
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hashtag__text {
+  margin: 0 auto;
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  position: relative;
 }
 
 .copyright__text {
+  margin: 0 auto;
+  padding-right: 35px;
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.social__link {
-  text-decoration: none;
-}
-
-.copyright__link {
-  text-decoration: none;
-}
-
-@media (min-width: $tablet-width) {
-  .footer__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .footer {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffffff;
-  }
+.copyright__item--link {
+  position: absolute;
+  right: -2px;
 }
