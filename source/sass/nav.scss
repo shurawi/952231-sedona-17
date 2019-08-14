@@ -57,7 +57,13 @@
       color: #94b9d2;
     }
 }
-
+/*
+.nav__link--active {
+  color: #94b9d2;
+  background-color: #5496bd;
+  border-top-color: #5496bd;
+}
+*/
 .nav__item:nth-child(3) a {
   position: absolute;
   padding: 0;

@@ -6,3 +6,12 @@
   background-size: 105% auto, 280px auto, 768px auto;
   background-position: center bottom, 50% 50%;
 }
+
+.photo-page__wrap {
+  height: 160px;
+  background: url(../img/bg-intro-triangle-mobile.svg) no-repeat,
+              url(../img/text-sedona.svg) no-repeat,
+              url(../img/bg-back-mobile@1x.jpg) no-repeat;
+  background-size: 105% auto, 220px auto, 768px auto;
+  background-position: center bottom, 50% 45%;
+}
