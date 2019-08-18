@@ -4,11 +4,19 @@
   padding-left: 14px;
   padding-right: 20px;
   text-align: center;
-  text-indent: 12px;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-top: 50px;
+    padding-left: 160px;
+    padding-right: 155px;
+
+  }
 }
 
 .promo__text {
