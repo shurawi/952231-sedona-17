@@ -1,24 +1,17 @@
 @import "variables.scss";
 
-.nav {
+.nav__wrap {
   position: relative;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
   text-align: center;
   background-color: #ffffff;
-  width: 320px;
-  margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    width: 767px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1279px;
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
   }
 }
 

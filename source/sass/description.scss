@@ -30,10 +30,16 @@
 }
 
 .description__pic {
-  @media (min-width: $tablet-width) {
-    width: 67%;
-
+  background-size: cover;
+  min-height: 260px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+    @media (min-width: $tablet-width) {
+      box-sizing: border-box;
+      width: 67%;
   }
+
 }
 
 .description__title {

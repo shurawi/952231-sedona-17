@@ -54,6 +54,10 @@
     width: 72px;
     height: 72px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 165px;
+  }
 }
 
 .advantages__text {
@@ -91,6 +95,7 @@
   line-height: 21px;
   font-weight: normal;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     padding: 5px 48px 0 48px;
     text-align: center;

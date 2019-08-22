@@ -12,22 +12,29 @@
 
     <header class="header">
       <nav class="nav">
-        <div class="nav__item">
-          <a class="nav__link nav__link--active">Главная</a>
+        <div class="wrap nav__wrap">
+          <div class="nav__item">
+            <a class="nav__link nav__link--active">Главная</a>
+          </div>
+          <div class="nav__item">
+            <a class="nav__link" href="photo.html">фото и видео</a>
+          </div>
+          <div class="nav__item">
+            <a class="nav__link" href="index.html">
+              <picture class="nav__pic">
+                <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+                <img class="nav__img" src="img/logo-sedona-mobile.svg" alt="Туристический городок «Седона»">
+              </picture>
+            </a>
+          </div>
+          <div class="nav__item">
+            <a class="nav__link" href="review.html">Форма отзыва</a>
+          </div>
+          <div class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </div>
+          <button class="nav__toggle nav--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
-        <div class="nav__item">
-          <a class="nav__link" href="photo.html">фото и видео</a>
-        </div>
-        <div class="nav__item">
-          <a class="nav__link" href="index.html"><img class="nav__img" src="img/logo-sedona-mobile.svg" width="" height="" alt="Туристический городок «Седона»"></a>
-        </div>
-        <div class="nav__item">
-          <a class="nav__link" href="review.html">Форма отзыва</a>
-        </div>
-        <div class="nav__item">
-          <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-        </div>
-        <button class="nav__toggle nav--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
     </header>
 
@@ -53,7 +60,7 @@
           <div class="description__pic">
             <picture>
               <source srcset="img/main-city-tablet@1x.jpg" media="(min-width: 767px)">
-              <source srcset="img/main-city-desktop@1x.jpg" media="(min-width: 1279px)">
+              <source srcset="img/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
               <img src="img/main-city-mobile@1x.jpg" alt="Двухэтажный дом в городке «Седона»">
             </picture>
           </div>
@@ -100,7 +107,7 @@
           <div class="description__pic">
             <picture>
               <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 767px)">
-              <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1279px)">
+              <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
               <img src="img/main-bridge-mobile@1x.jpg" alt="Изоброжение моста «Моста Дьявола»">
             </picture>
           </div>
@@ -121,7 +128,7 @@
           <div class="vantages__item">
             <h3 class="vantages__title">МАЛО ТУРИСТОВ</h3>
             <p class="vantages__paragraph">— №5 —</p>
-            <p class="vantages__paragraph">Большинство едет в гранд каньон и толпится там</p>
+            <p class="vantages__paragraph vantages__paragraph--tourist">Большинство едет в гранд каньон и толпится там</p>
           </div>
         </div>
       </section>

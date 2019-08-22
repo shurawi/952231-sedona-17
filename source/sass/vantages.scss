@@ -17,12 +17,20 @@ margin-bottom: 17px;
   @media (min-width: $tablet-width) {
     width: 33%;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+  }
 }
 
 .vantages__item:last-child {
   margin-bottom: 10px;
     @media (min-width: $tablet-width) {
       margin-bottom: 17px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 37px;
     }
 }
 
@@ -40,6 +48,11 @@ margin-bottom: 17px;
       padding: 27px 47px 10px 47px;
       font-size: 21px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 27px 137px 10px 137px;
+
+    }
 }
 
 .vantages__paragraph {
@@ -55,4 +68,15 @@ margin-bottom: 17px;
     @media (min-width: $tablet-width) {
       padding: 0 45px 8px;
     }
+
+    @media (min-width: $desktop-width) {
+
+      padding: 0 30px 8px;
+    }
+}
+
+.vantages__paragraph--tourist {
+  @media (min-width: $desktop-width) {
+    padding: 0 35px 8px;
+  }
 }

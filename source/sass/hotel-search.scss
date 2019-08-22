@@ -32,12 +32,22 @@
     @media (min-width: $tablet-width) {
       padding: 17px 160px 0;
     }
+    @media (min-width: $desktop-width) {
+      padding: 17px 375px 0;
+    }
 }
 
 .button__warp {
   display: flex;
   justify-content: center;
   margin-top: 23px;
+    @media (min-width: $tablet-width) {
+      margin-top: 27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 30px;
+    }
 }
 
 .hotel-search__button {

@@ -3,11 +3,3 @@
 .header {
   min-height: 56px;
 }
-
-@media (min-width: $desktop-width) {
-  .header {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
