@@ -1,63 +1,109 @@
 @import "variables.scss";
 
-.advantages {
+.advantages__wrap {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-bottom: 5px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 33%;
+  }
+}
+
+.advantages__item:first-child {
+  margin-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.advantages__item:last-child {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.advantages__item--gifts {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.advantages__img {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+
+  @media (min-width: $tablet-width) {
+    top: 60px;
+    left: 90px;
+    width: 72px;
+    height: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 165px;
+  }
 }
 
 .advantages__text {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 
-.advantages__description--text {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
-  text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
 }
 
 .advantages__title {
+  margin-bottom: 15px;
+  padding-left: 70px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 138px;
+    font-size: 21px;
+  }
 }
 
-.advantages__description {
+.advantages__paragraph {
+  margin: 0 auto;
+  padding-left: 70px;
+  padding-right: 30px;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   text-transform: uppercase;
-}
 
-.advantages__item--town,
-.advantages__item--bridge {
-  background-color: #81b3d2;
-  color: #ffffff;
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__text {
+  @media (min-width: $tablet-width) {
+    padding: 5px 48px 0 48px;
     text-align: center;
-    font-size: 14px;
-    line-height: 21px;
-  }
-
-  .advantages__title {
-    font-size: 21px;
-  }
-
-  .advantages__wrapper {
-    display: flex;
-    flex-direction: row;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .advantages__text {
-    line-height: 26px;
+.advantages__paragraph--gifts {
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
   }
 }

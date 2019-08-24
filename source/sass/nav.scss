@@ -1,0 +1,131 @@
+@import "variables.scss";
+
+.nav__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav__item {
+  background-color: #81b3d2;
+  border-bottom: 1px solid #678fa8;
+
+  &:hover {
+    background-color: #669ec0;
+    border-top-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    border-top-color: #5496bd;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 20%;
+    background-color: #ffffff;
+    border: none;
+
+    &:hover {
+      background-color: inherit;
+    }
+
+    &:active {
+      background-color: inherit;
+    }
+  }
+}
+
+.nav__item:nth-child(3) {
+  position: relative;
+  height: 56px;
+  order: 5;
+  background-color: #ffffff;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    position: inherit;
+    order: 0;
+  }
+}
+
+.nav__link {
+  display: block;
+  padding: 8px 0;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:active {
+    color: #94b9d2;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #cecece;
+    }
+  }
+}
+/*
+.nav__link--active {
+  color: #94b9d2;
+  background-color: #5496bd;
+  border-top-color: #5496bd;
+}
+*/
+.nav__item:nth-child(3) a {
+  position: absolute;
+  padding: 0;
+  left: 110px;
+
+  @media (min-width: $tablet-width) {
+    position: inherit;
+    left: 0;
+  }
+}
+
+.nav__toggle {
+  display: block;
+  position: absolute;
+  right: 18px;
+  bottom: 20px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav__toggle::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 1px;
+  width: 22px;
+  height: 3px;
+  background-color: #81b3d2;
+  box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+}

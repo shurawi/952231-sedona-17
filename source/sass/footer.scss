@@ -1,48 +1,91 @@
 @import "variables.scss";
 
-.footer__title {
-  margin: 0;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 8px;
+  }
 }
 
-.copyright__text {
-  font-size: 14px;
+.footer__wrap--video {
+  padding-top: 75px;
+}
+
+.hashtag {
+  padding-top: 32px;
+}
+
+.hashtag__text {
+  margin: 0 auto;
+  font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 37px;
 }
 
 .social__link {
-  text-decoration: none;
-}
+  display: inline-block;
+  margin-right: 5px;
+  width: 47px;
+  height: 47px;
+  background-color: #81b3d2;
 
-.copyright__link {
-  text-decoration: none;
-}
-
-@media (min-width: $tablet-width) {
-  .footer__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  &:hover {
+    background-color: #669ec0;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .footer {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffffff;
-  }
+.social__link--twitter {
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__link--facebook {
+  background-image: url("../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__link--youtube {
+  background-image: url("../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.copyright__text {
+  margin: 0 auto;
+  padding-right: 35px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.copyright__item--link {
+  position: absolute;
+  right: -2px;
 }

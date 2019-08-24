@@ -5,110 +5,126 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper main-nav__wrapper--left">
-          <a class="main-nav__link" href="index.html">Главная</a>
-          <a class="main-nav__link" href="photo.html">фото и видео</a>
-        </div>
-        <div class="main-nav__img">
-          <a class="header__logo">
-            <img class="header__logo-image" src="img/logo-sedona-mobile.svg" width="" height="" alt="Туристический городок «Седона»">
-          </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-        </div>
-        <div class="main-nav__wrapper main-nav__wrapper--right">
-          <a class="main-nav__link" href="review.html">Форма отзыва</a>
-          <a class="main-nav__link" href="#">HTML Academy</a>
+      <nav class="nav">
+        <div class="wrap nav__wrap">
+          <div class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
+          </div>
+          <div class="nav__item">
+            <a class="nav__link nav__link--active">фото и видео</a>
+          </div>
+          <div class="nav__item">
+            <a class="nav__link" href="index.html"><img class="nav__img" src="img/logo-sedona-mobile.svg" width="" height="" alt="Туристический городок «Седона»"></a>
+          </div>
+          <div class="nav__item">
+            <a class="nav__link" href="review.html">Форма отзыва</a>
+          </div>
+          <div class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </div>
+          <button class="nav__toggle nav--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
       </nav>
     </header>
 
-    <main class="photovideo">
-      <h2 class="photo-video__title">Фото и видео</h2>
+    <main class="photo-page">
+      <section class="baner photo-page--baner">
+        <div class="wrap photo-page__wrap">
+          <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+        </div>
+      </section>
+      <section class="greeting">
+        <div class="wrap greeting__wrap">
+          <h2 class="greeting__title">Фото и видео</h2>
+          <p class="greeting__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+      </section>
       <section class="photo">
-        <section class="photo__description">
-          <p class="photo__paragraph">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        </section>
-        <section class="photo__list">
-          <div class="photo__item">
-            <div class="photo__item-img">
-              <img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="фото дороги на фоне закатного неба">
+        <div class="wrap photo__wrap">
+          <div class="photo__item photo__item--sunse">
+            <div class="photo__img photo__img--sunset">
+              <img class="photo__img-item" src="img/photo-sunset-mobile@1x.jpg" width="500" height="280" alt="фото дороги на фоне закатного неба">
             </div>
-            <div class="photo__item-text">
+            <div class="photo__sign">
               <p class="photo__text">неродные просторы</p>
               <cite class="photo__autor">Автор фото: Борис</cite>
               <span class="photo__likes">1350</span>
             </div>
           </div>
           <div class="photo__item">
-            <div class="photo__item-img">
-              <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="фото местной растительности">
+            <div class="photo__img">
+              <img class="photo__img-item" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="фото местной растительности">
             </div>
-            <div class="photo__item-text">
+            <div class="photo__sign">
               <p class="photo__text">Местная растительность</p>
-              <cite class="photo__autor">втор фото: Сергей</cite>
+              <cite class="photo__autor">Автор фото: Сергей</cite>
               <span class="photo__likes">143</span>
             </div>
           </div>
           <div class="photo__item">
-            <div class="photo__item-img">
-              <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="фото дороги ведущей в глубь хвойного леса">
+            <div class="photo__img">
+              <img class="photo__img-item" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="фото дороги ведущей в глубь хвойного леса">
             </div>
-            <div class="photo__item-text">
+            <div class="photo__sign">
               <p class="photo__text">Дорога на север</p>
               <cite class="photo__autor">Автор фото: Петр</cite>
               <span class="photo__likes">96</span>
             </div>
           </div>
           <div class="photo__item">
-            <div class="photo__item-img">
-              <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="фото изображающее Мост дьявола">
+            <div class="photo__img">
+              <img class="photo__img-item" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="фото изображающее Мост дьявола">
             </div>
-            <div class="photo__item-text">
+            <div class="photo__sign">
               <p class="photo__text">Мост дьявола</p>
-              <cite class="photo__autor">втор фото: Антон</cite>
+              <cite class="photo__autor">Автор фото: Антон</cite>
               <span class="photo__likes">254</span>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+      <section class="greeting">
+        <div class="wrap greeting__wrap">
+          <h2 class="greeting__title greeting__title--video">Все еще сомневаетесь?</h2>
+          <p class="greeting__text">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
+        </div>
       </section>
       <section class="video">
-        <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <section class="video__description">
-          <p class="video__paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        </section>
-        <section class="video__wrapper">
+        <div class="wrap video__wrap">
           <video src="videofile.ogg" poster="img/video-mobile@1x.jpg" controls width="320" height="201" ></video>
-        </section>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__wrapper">
-        <h2 class="footer__title">#visitSEDONA</h2>
-        <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Триттере</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы в Ютюбе</a>
-            </li>
-          </ul>
+      <div class="wrap footer__wrap footer__wrap--video">
+        <div class="hashtag">
+          <p class="hashtag__text">#visitSEDONA</p>
         </div>
-        <div class="footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="social__list">
+          <div class="social__item">
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Триттере</span></a>
+          </div>
+          <div class="social__item">
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+          </div>
+          <div class="social__item">
+            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы в Ютюбе</span></a>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="copyright__item">
+            <p class="copyright__text">Разработано</p>
+          </div>
+          <div class="copyright__item copyright__item--link">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="" height="" alt="логотип HTML Academy"><span class="visually-hidden">HTML Academy</span></a>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,15 +1,18 @@
 /*index.html*/
 @import "scaffolding.scss";
-@import "visually-hidden.scss";
 @import "header.scss";
 @import "main.scss";
-@import "main-nav.scss";
+@import "nav.scss";
+@import "baner.scss";
+@import "promo.scss";
+@import "description.scss";
 @import "advantages.scss";
+@import "vantages.scss";
 @import "hotel-search.scss";
 @import "footer.scss";
 
 /*photo.html*/
-@import "photo-video.scss";
+@import "greeting.scss";
 @import "photo.scss";
 @import "video.scss";
 
@@ -19,5 +22,5 @@
 
 
 /*other*/
-@import "other.scss";
+
 @import "variables.scss";
