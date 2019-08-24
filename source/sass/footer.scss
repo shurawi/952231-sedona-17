@@ -5,11 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-around;
     padding-top: 8px;
-}
+  }
 }
 
 .footer__wrap--video {

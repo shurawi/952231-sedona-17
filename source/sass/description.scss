@@ -7,13 +7,13 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
-}
+  }
 }
 
 .description__wrap--bridge {
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
-}
+  }
 }
 
 .description__text {
@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
     background-color: #81b3d2;
-}
+  }
 }
 
 .description__pic {
@@ -35,10 +35,11 @@
   display: flex;
   position: relative;
   overflow: hidden;
+
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
     width: 67%;
-}
+  }
 }
 
 .description__title {
@@ -65,7 +66,7 @@
     padding-left: 40px;
     padding-right: 40px;
     background-image: none;
-}
+  }
 }
 
 .description__paragraph {
@@ -83,7 +84,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 42px 20px 42px ;
-}
+  }
 }
 
 
@@ -91,7 +92,8 @@
 .description__title--bridge {
   padding-top: 40px;
   background-image: none;
+
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-}
+  }
 }
