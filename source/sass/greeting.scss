@@ -11,6 +11,12 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      margin: 0 auto;
+      padding-top: 70px;
+    }
 }
 
 .greeting__title--video {
@@ -26,4 +32,10 @@
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      padding: 30px 170px 55px;;
+
+    }
 }

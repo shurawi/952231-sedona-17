@@ -10,11 +10,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 }
 
 .photo__item {
   margin-top: 19px;
   margin-bottom: 23px;
+}
+
+.photo__item--sunset {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-right: 50px;
+  }
 }
 
 .photo__sign {
