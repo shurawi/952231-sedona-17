@@ -26,9 +26,7 @@
 
   @media (min-width: $tablet-width) {
     height: 290px;
-    background: url(../img/bg-intro-triangle-tablet.svg) no-repeat,
-                url(../img/text-sedona.svg) no-repeat,
-                url(../img/bg-back-tablet@1x.jpg) no-repeat;
+    background: url(../img/bg-intro-triangle-tablet.svg) no-repeat, url(../img/text-sedona.svg) no-repeat, url(../img/bg-back-tablet@1x.jpg) no-repeat;
     background-size: 100% auto, 460px auto, 100% auto;
     background-position: center 100%, 50% 45%, center 92%;
   }
