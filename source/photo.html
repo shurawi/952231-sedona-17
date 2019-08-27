@@ -20,7 +20,12 @@
             <a class="nav__link nav__link--active">фото и видео</a>
           </div>
           <div class="nav__item">
-            <a class="nav__link" href="index.html"><img class="nav__img" src="img/logo-sedona-mobile.svg" width="" height="" alt="Туристический городок «Седона»"></a>
+            <a class="nav__link" href="index.html">
+              <picture class="nav__pic">
+                <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+                <img class="nav__img" src="img/logo-sedona-mobile.svg" alt="Туристический городок «Седона»">
+              </picture>
+            </a>
           </div>
           <div class="nav__item">
             <a class="nav__link" href="review.html">Форма отзыва</a>
@@ -47,11 +52,15 @@
       </section>
       <section class="photo">
         <div class="wrap photo__wrap">
-          <div class="photo__item photo__item--sunse">
+          <div class="photo__item photo__item--sunset">
             <div class="photo__img photo__img--sunset">
-              <img class="photo__img-item" src="img/photo-sunset-mobile@1x.jpg" width="500" height="280" alt="фото дороги на фоне закатного неба">
+              <picture class="photo-item__image photo-item__image--sunset">
+                <source srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                  <img class="photo__img-item photo__img-item--sunset"  srcset="img/photo-sunset-mobile@1x.jpg 1x, img/photo-sunset-mobile@2x.jpg 2x" alt="фото дороги на фоне закатного неба">
+               </picture>
             </div>
-            <div class="photo__sign">
+            <div class="photo__sign photo__sign--sunset">
               <p class="photo__text">неродные просторы</p>
               <cite class="photo__autor">Автор фото: Борис</cite>
               <span class="photo__likes">1350</span>
@@ -59,45 +68,57 @@
           </div>
           <div class="photo__item">
             <div class="photo__img">
-              <img class="photo__img-item" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="фото местной растительности">
+              <picture class="photo-item__image">
+                <source srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                   <img class="photo__img-item"  srcset="img/photo-cactus-mobile@1x.jpg 1x, img/photo-cactus-mobile@2x.jpg 2x" alt="фото местной растительности">
+               </picture>
             </div>
-            <div class="photo__sign">
-              <p class="photo__text">Местная растительность</p>
-              <cite class="photo__autor">Автор фото: Сергей</cite>
-              <span class="photo__likes">143</span>
-            </div>
-          </div>
-          <div class="photo__item">
-            <div class="photo__img">
-              <img class="photo__img-item" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="фото дороги ведущей в глубь хвойного леса">
-            </div>
-            <div class="photo__sign">
-              <p class="photo__text">Дорога на север</p>
-              <cite class="photo__autor">Автор фото: Петр</cite>
-              <span class="photo__likes">96</span>
+            <div class="photo__sign photo__sign--cactus">
+              <p class="photo__text photo__text--cactus">Местная растительность</p>
+              <cite class="photo__autor photo__autor--cactus">Автор фото: Сергей</cite>
+              <span class="photo__likes photo__likes--cactus">143</span>
             </div>
           </div>
           <div class="photo__item">
             <div class="photo__img">
-              <img class="photo__img-item" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="фото изображающее Мост дьявола">
+              <picture class="photo-item__image">
+                <source srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                   <img class="photo__img-item"  srcset="img/photo-roads-mobile@1x.jpg 1x, img/photo-roads-mobile@2x.jpg 2x" alt="фото дороги ведущей в глубь хвойного леса">
+               </picture>
             </div>
-            <div class="photo__sign">
-              <p class="photo__text">Мост дьявола</p>
-              <cite class="photo__autor">Автор фото: Антон</cite>
-              <span class="photo__likes">254</span>
+            <div class="photo__sign photo__sign--roads">
+              <p class="photo__text photo__text--roads">Дорога на север</p>
+              <cite class="photo__autor photo__autor--roads">Автор фото: Петр</cite>
+              <span class="photo__likes photo__likes--roads">96</span>
+            </div>
+          </div>
+          <div class="photo__item photo__item--bridge">
+            <div class="photo__img photo__img--bridge">
+              <picture class="photo-item__image photo-item__image--bridge">
+                <source srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                   <img class="photo__img-item"  srcset="img/photo-bridge-mobile@1x.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x" alt="фото изображающее Мост дьявола">
+               </picture>
+            </div>
+            <div class="photo__sign photo__sign--bridge">
+              <p class="photo__text photo__text--bridge">Мост дьявола</p>
+              <cite class="photo__autor photo__autor--bridge">Автор фото: Антон</cite>
+              <span class="photo__likes photo__likes--bridge">254</span>
             </div>
           </div>
         </div>
       </section>
       <section class="greeting">
-        <div class="wrap greeting__wrap">
+        <div class="wrap greeting__wrap greeting__wrap--video">
           <h2 class="greeting__title greeting__title--video">Все еще сомневаетесь?</h2>
-          <p class="greeting__text">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
+          <p class="greeting__text greeting__text--video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
       </section>
-      <section class="video">
-        <div class="wrap video__wrap">
-          <video src="videofile.ogg" poster="img/video-mobile@1x.jpg" controls width="320" height="201" ></video>
+      <section class="video-item">
+        <div class="wrap video-item__wrap">
+          <video src="videofile.ogg" poster="img/video-mobile@1x.jpg" controls></video>
         </div>
       </section>
     </main>
