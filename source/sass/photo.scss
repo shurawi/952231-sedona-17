@@ -18,16 +18,22 @@
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
+    margin: 0 auto;
   }
 }
 
 .photo__item {
   margin-top: 19px;
   margin-bottom: 23px;
+  font-size: 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
 }
 
@@ -57,6 +63,15 @@
     background-color: #f2f2f2;
     padding-bottom: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.5;
+    color: #ffffff;
+    background-color: #000000;
+  }
 }
 
 .photo__sign--sunset {
@@ -68,6 +83,10 @@
 .photo__sign--roads {
   @media (min-width: $tablet-width) {
     background-color: #eaeaea;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #000000;
   }
 }
 
