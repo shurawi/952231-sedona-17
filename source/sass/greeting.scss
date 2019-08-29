@@ -6,7 +6,7 @@
 }
 
 .greeting__title {
-  margin: 44px 0 28px 0;
+  padding: 20px 0 13px 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -15,12 +15,20 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     margin: 0 auto;
-    padding-top: 70px;
+    padding: 72px 0 0 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 110px 0 0 0;
   }
 }
 
 .greeting__title--video {
-  margin-top: 26px;
+  padding: 10px 0 13px 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 0 30px 0;
+  }
 }
 
 .greeting__text {
@@ -35,6 +43,22 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    padding: 30px 170px 55px;
+    padding: 32px 170px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 350px 55px;
+  }
+}
+
+.greeting__text--video {
+  padding: 0 30px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 170px 75px 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 390px 75px;
   }
 }

@@ -21,7 +21,10 @@
           <a class="nav__link" href="photo.html">фото и видео</a>
         </div>
         <div class="nav__item">
-          <a class="nav__link" href="index.html"><img class="nav__img" src="img/logo-sedona-mobile.svg" width="" height="" alt="Туристический городок «Седона»"></a>
+          <picture class="nav__pic">
+            <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+            <img class="nav__img" src="img/logo-sedona-mobile.svg" alt="Туристический городок «Седона»">
+          </picture>
         </div>
         <div class="nav__item">
           <a class="nav__link">Форма отзыва</a>
@@ -35,6 +38,11 @@
     </header>
 
     <main class="reviews">
+      <section class="baner review-page--baner">
+        <div class="wrap review-page__wrap">
+          <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+        </div>
+      </section>
       <h2 class="reviews__title">Оставьте свой отзыв</h2>
       <p class="reviews__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
