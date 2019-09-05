@@ -1,0 +1,33 @@
+.salutation__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.salutation__title {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-top: 75px;
+  }
+}
+
+.salutation__text {
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}
