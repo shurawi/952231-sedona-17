@@ -42,8 +42,13 @@
   height: 47px;
   background-color: #81b3d2;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
   }
 }
 
@@ -88,4 +93,15 @@
 .copyright__item--link {
   position: absolute;
   right: -2px;
+}
+
+.copyright__svg {
+  &:hover,
+  &:focus {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
 }

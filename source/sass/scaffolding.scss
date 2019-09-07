@@ -73,8 +73,18 @@ img {
   color: #ffffff;
   background-color: #81b3d2;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #669ec0;
+  }
+
+  &:active {
+    color: #94b9d2;
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #94b9d2;
   }
 
   @media (min-width: $tablet-width) {
