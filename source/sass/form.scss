@@ -306,11 +306,11 @@
   }
 }
 
- .form__span {
-   @media (min-width: $desktop-width) {
-     display: none;
-   }
+.form__span {
+ @media (min-width: $desktop-width) {
+   display: none;
  }
+}
 
 .form__input {
   border: none;
