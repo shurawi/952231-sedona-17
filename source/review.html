@@ -69,16 +69,18 @@
             </fieldset>
             <fieldset class="form__item form__item--contacts">
               <legend class="form__title form__title--contacts">Контактная информация:</legend>
-              <div class="form__inner form__inner--contacts">
-                <label class="form__label form__label--contacts" for="phone">Контактный телефон<sup>*</sup>:</label>
-                <div class="form__icon form__icon--phone">
-                  <input class="form__input form__input--contacts" type="phone" name="phone" placeholder="Введите телефон" id="phone">
+              <div class="form__inner-wrap form__inner-wrap--contacts">
+                <div class="form__inner form__inner--contacts">
+                  <label class="form__label form__label--contacts" for="phone"><span class="form__span">Контактный</span> телефон<sup>*</sup>:</label>
+                  <div class="form__icon form__icon--phone">
+                    <input class="form__input form__input--contacts" type="phone" name="phone" placeholder="Введите телефон" id="phone">
+                  </div>
                 </div>
-              </div>
-              <div class="form__inner form__inner--contacts">
-                <label class="form__label form__label--contacts" for="email">Электронная почта<sup>*</sup>:</label>
-                <div class="form__icon form__icon--email">
-                  <input class="form__input form__input--contacts form__input--email" type="email" name="email" placeholder="Введите e-mail" id="email">
+                <div class="form__inner form__inner--contacts">
+                  <label class="form__label form__label--contacts" for="email">Электронная почта<sup>*</sup>:</label>
+                  <div class="form__icon form__icon--email">
+                    <input class="form__input form__input--contacts form__input--email" type="email" name="email" placeholder="Введите e-mail" id="email">
+                  </div>
                 </div>
               </div>
             </fieldset>
@@ -99,7 +101,7 @@
             </fieldset>
             <fieldset class="form__item form__item--selection form__item--checked">
               <legend class="form__title form__title--selection form__title--checked">посещенные достопримечательности:</legend>
-              <div class="form__inner-wrap">
+              <div class="form__inner-wrap form__inner-wrap--checked">
                 <div class="form__inner form__inner--selection form__inner--checked form__inner--devil-bridge">
                   <input class="form__input--selection" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
                   <label class="form__label--selection form__label--check" for="devil-bridge">Мост Дьявола</label>
