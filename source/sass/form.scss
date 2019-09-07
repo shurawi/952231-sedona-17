@@ -307,9 +307,9 @@
 }
 
 .form__span {
- @media (min-width: $desktop-width) {
-   display: none;
- }
+   @media (min-width: $desktop-width) {
+     display: none;
+  }
 }
 
 .form__input {
