@@ -18,12 +18,16 @@
   border-bottom: solid 1px #f2f2f2;
 
   @media (min-width: $tablet-width) {
-  border-bottom: none;
+    border-bottom: none;
   }
 }
 
 .form__item--description {
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .form__item--name {
@@ -56,12 +60,6 @@
     width: 100%;
     flex-wrap: wrap;
     max-height: 250px;
-  }
-}
-
-.form__item--description {
-  @media (min-width: $tablet-width) {
-    width: 100%;
   }
 }
 
@@ -190,8 +188,8 @@
   text-transform: uppercase;
   text-align: center;
 
-    @media (min-width: $tablet-width) {
-      font-size: 21px;
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
   }
 }
 
@@ -352,7 +350,7 @@
 }
 
 .form__icon::after {
-  content: '';
+  content: "";
   width: 58px;
   height: 58px;
   background-color: #e6e6e6;
@@ -361,11 +359,11 @@
 }
 
 .form__icon--phone::after {
-  background-image: url('../img/icon-phone.svg');
+  background-image: url("../img/icon-phone.svg");
 }
 
 .form__icon--email::after {
-  background-image: url('../img/icon-mail.svg');
+  background-image: url("../img/icon-mail.svg");
 }
 
 .form__input::placeholder,
@@ -389,7 +387,7 @@
 }
 
 .form__label--selection::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   width: 20px;
@@ -429,7 +427,7 @@
 }
 
 .form__input--selection:checked ~ .form__label--check::before {
-  background-image: url('../img/icon-tick.svg');
+  background-image: url("../img/icon-tick.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
