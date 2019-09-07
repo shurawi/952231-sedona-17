@@ -19,7 +19,8 @@
   background-color: #81b3d2;
   border-bottom: 1px solid #678fa8;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #669ec0;
     border-top-color: #669ec0;
   }
@@ -34,7 +35,8 @@
     background-color: #ffffff;
     border: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: inherit;
     }
 
@@ -76,7 +78,8 @@
     line-height: 26px;
     color: #000000;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: #81b3d2;
     }
 
@@ -85,13 +88,16 @@
     }
   }
 }
-/*
+
 .nav__link--active {
-  color: #94b9d2;
-  background-color: #5496bd;
-  border-top-color: #5496bd;
+  color: #cecece;
+
+    &:hover,
+    &:active {
+      color: #cecece;
+    }
 }
-*/
+
 .nav__item:nth-child(3) a {
   position: absolute;
   padding: 0;
