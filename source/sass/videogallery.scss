@@ -1,0 +1,140 @@
+@import "variables.scss";
+
+.videogallery {
+  padding-bottom: 40px;
+}
+
+
+.site-video {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+
+  @media(min-width: $tablet-width) {
+    width: 85%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+.site-video__wrapper {
+  display: inline-block;
+  position: relative;
+
+  @media(min-width: $desktop-width) {
+    margin-left: 10%;
+  }
+}
+
+.site-video__button {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: none;
+  bottom: 10px;
+  background-color: #f2f2f2;
+  fill: #5c6870;
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #b8b8b8;
+  }
+
+  @media(min-width: $tablet-width) {
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0);
+    fill: #ffffff;
+
+    &:hover {
+      fill: #c2c2c2;
+    }
+
+    &:active {
+      fill: #949494;
+    }
+  }
+}
+
+.site-video__button--play {
+  width: 22px;
+  height: 22px;
+  border: none;
+}
+
+.site-video__button--subtitles {
+
+  right: 70px;
+}
+
+.site-video__button--fullscreen {
+  margin-right: 10px;
+  right: 10px;
+}
+
+.site-video__progress-slider {
+   -webkit-appearance: none;
+  width: 80%;
+  height:2px;
+  outline: none;
+  background: rgba(255,255,255,0.2);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media(min-width: $tablet-width) {
+    bottom: 28px;
+    width: 70%;
+    left: 45%;
+  }
+}
+
+.site-video__progress-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height :10px;
+  background: rgba(255,255,255,1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.site-video__controls {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  background: #f2f2f2;
+
+  @media(min-width: $tablet-width) {
+    bottom: 41px;
+    background: none;
+  }
+}
+
+.site-video__slider-wrap {
+  background: rgba(0,0,0,0.6);
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  height: 40px;
+
+  @media(min-width: $tablet-width) {
+    width: 85%;
+    height: 60px;
+    margin-left: 62px;
+  }
+}
+
+.site-video__controls-wrap {
+  position: absolute;
+  width: 100%;
+  bottom: -38px;
+
+  @media(min-width: $desktop-width) {
+    margin-left: 1.5%;
+  }
+}
