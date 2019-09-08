@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
+var imagemin = require("gulp-imagemin");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var rename = require("gulp-rename");
@@ -11,6 +12,16 @@ var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 
 var server = require("browser-sync").create();
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"));
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
