@@ -110,14 +110,11 @@
 }
 
 .nav__toggle {
-  display: block;
   position: absolute;
   right: 18px;
-  bottom: 20px;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border: none;
-  background-color: #ffffff;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -125,13 +122,26 @@
   }
 }
 
-.nav__toggle::before {
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  right: 1px;
-  width: 22px;
-  height: 3px;
+.nav__toggle--open {
+  bottom: 15px;
+  background-color: #ffffff;
+}
+
+.nav__toggle--closed {
+  top: 15px;
   background-color: #81b3d2;
-  box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+}
+
+.nav__toggle--close-svg {
+  position: absolute;
+  right: 4px;
+  bottom: 5px;
+  fill: #ffffff;
+}
+
+.nav__toggle--open-svg {
+  position: absolute;
+  right: 4px;
+  bottom: 5px;
+  fill: #81b3d2;
 }
