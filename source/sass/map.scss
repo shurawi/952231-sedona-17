@@ -1,0 +1,29 @@
+.map {
+  position: relative;
+
+  min-height: 350px;
+}
+
+.map__frame {
+  position: relative;
+  z-index: 2;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.map__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
